@@ -14,7 +14,9 @@ def carregar_acessos():
     next(leitor)
 
     for home, como_funciona, contato, comprou in leitor:
-        x.append([int(home), int(como_funciona), int(contato)])
+        dado = [int(home), int(como_funciona), int(contato)]
+
+        x.append(dado)
         y.append(int(comprou))
 
     return x, y
