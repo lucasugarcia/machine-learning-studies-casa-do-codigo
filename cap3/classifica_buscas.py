@@ -1,6 +1,5 @@
-from dados import carregar_buscas
+import pandas as pd
 
-x, y = carregar_buscas()
+df = pd.read_csv('buscas.csv')
 
-print(x)
-print(y)
+print(df)
